@@ -35,13 +35,33 @@
           </li>
         </ul>
       </nav>
-      <ul class="login">
-        <li><img src="img/icon-login.svg" alt="icon-login">Войти</li>
-        <li>Регистрация</li>
-      </ul>
-      <p class="contacts-phone"> <img src="img/icon-phone.svg" alt="icon-phone">+7(812)555-05-55</p>
-      <p class="header-contacts">  г.Санкт-Петебург......</p>
 
+      <ul class="login">
+        <li class="button">
+
+            <button class="button" type="submit" name="enter" aria-label="Вход в личный кабинет">
+              <img src="img/icon-login.svg" alt="icon-login"> <!--этой картинке понадобится класс -->
+                 Войти
+            </button>
+
+        </li>
+        <li class="button">
+          <a href="#">Регистрация</a>
+        </li>
+      </ul>
+
+      <form action="http://echo.htmlacademy.ru" method="post">
+        <input Ваше имя: name="name">
+        <input name="email" >
+        <textarea rows="5" cols="100">
+        </textarea>
+        <button type="button" name="close" aria-label="Закрыть">  <!-- нужно ли прописывать слово кнопка-->
+      <form>
+
+      <p class="contacts-phone" aria-label="Телефон магазина">
+        <img src="img/icon-phone.svg" alt="icon-phone">+7(812)555-05-55
+      </p>
+      <p class="header-contacts" aria-label="Адрес магазина">г.Санкт-Петербург......</p>
 
       <b>
         <a class="logo" href="index.html">Техномарт</a>
@@ -83,7 +103,7 @@
     <section class="contacts">
       <h3>Контакты</h3>
       <p class="text">Вы можеет забрать товар сами, заехав в наш офис:</p>
-      <img src="img/layer 5.png" width="300" heigth="158" alt="Магазин на карте">
+        <img src="img/layer 5.png" width="300" heigth="158" alt="Магазин на карте">
       <div class="more-information">
         <a href="#">заблудились? напишите нам</a>
       </div>
@@ -96,34 +116,34 @@
       <div class="footer-navigation">
         <ul class="site-navigation">
           <li>
-            <a href="#">Компания</a>
+            <a href="#" >Компания</a>
           </li>
           <li>
             <a href="inner.html">Каталог</a>
           </li>
           <li>
-            <a href="#">Новости</a>
+            <a href="#" >Новости</a>
           </li>
           <li>
-            <a href="#">Доставка</a>
+            <a href="#" >Доставка</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a href="#" >Контакты</a>
           </li>
         </ul>
 
         <ul class="product-navigation">
           <li>
-            <a href="#">Материалы</a>
+            <a href="#" >Материалы</a>
           </li>
           <li>
-            <a href="#">Техника</a>
+            <a href="#" >Техника</a>
           </li>
           <li>
-            <a href="#">Инструмент</a>
+            <a href="#" >Инструмент</a>
           </li>
           <li>
-            <a href="#">Спецпредложения</a>
+            <a href="#" >Спецпредложения</a>
           </li>
         </ul>
       </div>
@@ -133,22 +153,22 @@
 
       <ul class="social-button">
         <li>
-          <a href="#"><img src="img/icon-vk.svg" alt="icon-vk">Вконтакте</a>
+          <a href="#"><img src="img/icon-vk.svg" alt="icon-vk" aria-label="магазин Вконтакте">Вконтакте</a>
         </li>
         <li>
-          <a href="#"><img src="img/icon-fb.svg" alt="icon-fb">Фейсбук</a>
+          <a href="#"><img src="img/icon-fb.svg" alt="icon-fb" aria-label="магазин на Фейсбук">Фейсбук</a>
         </li>
         <li>
-          <a href="#"><img src="img/icon-insta.svg" alt="icon-insta">Инстаграм</a>
+          <a href="#"><img src="img/icon-insta.svg" alt="icon-insta" aria-label="магазин в Инстаграм">Инстаграм</a>
         </li>
       </ul>
 
       <ul class="feedback">
         <li>Обратная связь
-          <a class="feedbacklink" href="#">mail@htmlacademy.ru</a>
+          <a class="feedbacklink" href="#" aria-label="электронный адрес">mail@htmlacademy.ru</a>
         </li> <!-- ссылке добавил класс практикуется такое? -->
         <li> Разработано
-          <a  class="feedbacklink" href="#">htmlacademy.ru</a>
+          <a  class="feedbacklink" href="#" aria-label="ссылка">htmlacademy.ru</a>
         </li>
       </ul>
 
