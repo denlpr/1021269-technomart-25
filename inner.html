@@ -77,32 +77,57 @@
       <section class="filters">
         <h3 class="visually-hidden">Фильтр товаров</h3>
         <b class="filters-argument">производители:</b>
-        <ul>
-          <li>
-            <img src="img/checkbox-on.svg" width="27" height="23" alt="#">Bosch
-          </li>
-          <li>
-            <img src="img/checkbox-off.svg" width="23" height="23" alt="#">интерскол
-          </li>
-          <li>
-            <img src="img/checkbox-on.svg" width="27" height="23" alt="#">makita
-          </li>
-          <li>
-            <img src="img/checkbox-off.svg" width="23" height="23" alt="#">dewalt
-          </li>
-          <li>
-            <img src="img/checkbox-off.svg" width="23" height="23" alt="#">hitachi
-          </li>
-        </ul>
-        <b class="filters-argument">питание:</b>
-        <ul>
-          <li>
-            <img src="img/radio-on.svg" width="25" height="25" alt="#">аккумуляторные
-          </li>
-          <li>
-            <img src="img/radio-off.sv" width="25" height="25" alt="#">сетевые
-          </li>
-        </ul>
+        <form  action="http://echo.htmlacademy.ru" method="post">
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="Bosch">
+                  <img src="img/checkbox-on.svg" width="27" height="23" alt="#">Bosch
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="интерскол">
+                  <img src="img/checkbox-off.svg" width="23" height="23" alt="#">интерскол
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="makita">
+                  <img src="img/checkbox-on.svg" width="27" height="23" alt="#">makita
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="dewalt">
+                  <img src="img/checkbox-off.svg" width="23" height="23" alt="#">dewalt
+            </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="hitachi">
+                  <img src="img/checkbox-off.svg" width="23" height="23" alt="#">hitachi
+            </label>
+            </li>
+          </ul>
+          <b class="filters-argument">питание:</b>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="energy" value="аккумуляторные">
+                  <img src="img/radio-on.svg" width="25" height="25" alt="#">аккумуляторные
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="energy" value="сетевые">
+                  <img src="img/radio-off.svg" width="25" height="25" alt="#">сетевые
+              </label>
+            </li>
+          </ul>
+          <button type="submit" name="energy" aria-label="Отправить">Показать
+          </button>
+        </form>
       </section>
 
       <section class="catalog">
