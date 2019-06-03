@@ -51,12 +51,20 @@
       </ul>
 
       <form action="http://echo.htmlacademy.ru" method="post">
-        <input Ваше имя: name="name">
-        <input name="email" >
-        <textarea rows="5" cols="100">
-        </textarea>
-        <button type="button" name="close" aria-label="Закрыть">
-        </button> <!-- нужно ли прописывать слово кнопка-->
+        <label>Ваше имя:
+          <input name="name" placeholder="Имя Фамилия">
+        </label>
+        <label>Ваше e-mail:
+          <input name="email" placeholder="email@example.com">
+        </label>
+        <label>Текст письма:
+          <textarea rows="7" cols="50" name="text-mail">В свободной форме
+          </textarea>
+        </label>
+          <button type="button" name="close" aria-label="Закрыть"><img src="img/close-krest.svg" alt="красный крестик"> <!-- нужно ли прописывать слово кнопка-->
+          </button>
+          <button type="submit" aria-label="Отправить">Отправить
+          </button>
       </form>
 
       <p class="contacts-phone" aria-label="Телефон магазина">
@@ -104,7 +112,7 @@
     <section class="contacts">
       <h3>Контакты</h3>
       <p class="text">Вы можеет забрать товар сами, заехав в наш офис:</p>
-        <img src="img/layer 5.png" width="300" heigth="158" alt="Магазин на карте">
+        <img src="img/layer5.png" width="300" heigth="158" alt="Магазин на карте">
       <div class="more-information">
         <a href="#">заблудились? напишите нам</a>
       </div>
@@ -154,26 +162,26 @@
 
       <ul class="social-button">
         <li>
-          <a href="#"><img src="img/icon-vk.svg" alt="icon-vk" aria-label="магазин Вконтакте">Вконтакте</a>
+          <a href="#"><img src="img/icon-vk.svg" alt="icon-vk">Вконтакте</a>
         </li>
         <li>
-          <a href="#"><img src="img/icon-fb.svg" alt="icon-fb" aria-label="магазин на Фейсбук">Фейсбук</a>
+          <a href="#"><img src="img/icon-fb.svg" alt="icon-fb">Фейсбук</a>
         </li>
         <li>
-          <a href="#"><img src="img/icon-insta.svg" alt="icon-insta" aria-label="магазин в Инстаграм">Инстаграм</a>
+          <a href="#"><img src="img/icon-insta.svg" alt="icon-insta">Инстаграм</a>
         </li>
       </ul>
 
       <ul class="feedback">
         <li>Обратная связь
-          <a class="feedbacklink" href="#" aria-label="электронный адрес">mail@htmlacademy.ru</a>
+          <a class="feedbacklink" href="#">mail@htmlacademy.ru</a>
         </li> <!-- ссылке добавил класс практикуется такое? -->
         <li> Разработано
-          <a  class="feedbacklink" href="#" aria-label="ссылка">htmlacademy.ru</a>
+          <a  class="feedbacklink" href="#">htmlacademy.ru</a>
         </li>
       </ul>
 
-      <p class="copyright">2010-2019 Компания "Техномарт"  Все права защищены</p>
+      <p class="copyright">2010-2019 Компания "Техномарт" Все права защищены</p>
     </footer>
 
   </body>
