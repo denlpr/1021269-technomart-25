@@ -29,8 +29,6 @@
       </nav>
 
       <b class="personal-area">Равшан Джамшутович
-        <img src="img/icon-logout.svg" width="21" height="17" alt="#">
-        <img src="img/icon-user.svg" width="20" height="18" alt="#">
       </b>
 
       <ul class="my-orders">
@@ -39,17 +37,16 @@
       </ul>
 
       <p class="contacts-phone">+7(812) 555-05-55
-        <img src="img/icon-phone.svg" width="19" height="19" alt="#">
       </p>
 
       <p class="header-contacts">г.Санкт-Петебург...  </p>
 
       <p class="top-menu">
-        <img src="img/icon-search.svg" width="17" height="17" alt="#">Поиск
+        Поиск
       </p>
 
-      <p class="top-menu"><a href="#"><img src="img/icon-bookmark.svg" width="14" height="16" alt="#">Закладки:0</a></p>
-      <p class="top-menu"><a href="#"><img src="img/icon-cart.svg" width="15" height="15" alt="#">Корзина:0</a></p>
+      <p class="top-menu"><a href="#">Закладки:0</a></p>
+      <p class="top-menu"><a href="#">Корзина:0</a></p>
       <p class="top-menu"><a href="#">Оформить заказ</a></p>
 
     </header>
@@ -81,32 +78,27 @@
           <ul>
             <li>
               <label>
-                <input type="checkbox" name="Bosch">
-                  <img src="img/checkbox-on.svg" width="27" height="23" alt="#">Bosch
+                <input type="checkbox" name="Bosch">Bosch
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" name="интерскол">
-                  <img src="img/checkbox-off.svg" width="23" height="23" alt="#">интерскол
+                <input type="checkbox" name="интерскол">интерскол
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" name="makita">
-                  <img src="img/checkbox-on.svg" width="27" height="23" alt="#">makita
+                <input type="checkbox" name="makita">makita
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" name="dewalt">
-                  <img src="img/checkbox-off.svg" width="23" height="23" alt="#">dewalt
+                <input type="checkbox" name="dewalt">dewalt
             </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" name="hitachi">
-                  <img src="img/checkbox-off.svg" width="23" height="23" alt="#">hitachi
+                <input type="checkbox" name="hitachi">hitachi
             </label>
             </li>
           </ul>
@@ -114,14 +106,12 @@
           <ul>
             <li>
               <label>
-                <input type="radio" name="energy" value="аккумуляторные">
-                  <img src="img/radio-on.svg" width="25" height="25" alt="#">аккумуляторные
+                <input type="radio" name="energy" value="аккумуляторные">аккумуляторные
               </label>
             </li>
             <li>
               <label>
-                <input type="radio" name="energy" value="сетевые">
-                  <img src="img/radio-off.svg" width="25" height="25" alt="#">сетевые
+                <input type="radio" name="energy" value="сетевые">сетевые
               </label>
             </li>
           </ul>
@@ -288,11 +278,14 @@
 
     </main>
 
-    <form>
-      <a class="button-form" href="#">Оформить заказ</a>
-      <a class="button" href="#">Продолжить покупки</a>
-      <button type="button" name="close" aria-label="Закрыть"><img src="img/close-krest.svg" alt="красный крестик"> <!-- нужно ли прописывать слово кнопка-->
-      </button>
+    <form action="http://echo.htmlacademy.ru" method="post">
+      <fieldset>
+        <span>Товар добавлен в корзину</span>
+        <a class="button-form" href="#">Оформить заказ</a>
+        <a class="button" href="inner.html">Продолжить покупки</a>
+        <button type="button" name="close" aria-label="Закрыть">
+        </button>
+      </fieldset>
     </form>
 
     <footer>

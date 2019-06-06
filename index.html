@@ -38,12 +38,9 @@
 
       <ul class="login">
         <li class="button">
-
-            <button class="button" type="submit" name="enter" aria-label="Вход в личный кабинет">
-              <img src="img/icon-login.svg" alt="icon-login"> <!--этой картинке понадобится класс -->
-                 Войти
-            </button>
-
+          <button class="button" type="submit" name="enter" aria-label="Вход в личный кабинет">
+          Войти
+          </button>
         </li>
         <li class="button">
           <a href="#">Регистрация</a>
@@ -51,38 +48,40 @@
       </ul>
 
       <form action="http://echo.htmlacademy.ru" method="post">
-        <label>Ваше имя:
-          <input name="name" placeholder="Имя Фамилия">
-        </label>
-        <label>Ваше e-mail:
-          <input name="email" placeholder="email@example.com">
-        </label>
-        <label>Текст письма:
-          <textarea rows="7" cols="50" name="text-mail">В свободной форме
-          </textarea>
-        </label>
-          <button type="button" name="close" aria-label="Закрыть"><img src="img/close-krest.svg" alt="красный крестик"> <!-- нужно ли прописывать слово кнопка-->
+        <fieldset>
+          <label>Ваше имя:
+            <input type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+          <label>Ваше e-mail:
+            <input type="email" name="email" placeholder="email@example.com">
+          </label>
+          <label>Текст письма:
+            <textarea rows="7" cols="50" name="text-mail">В свободной форме
+            </textarea>
+          </label>
+          <button type="button" name="close" aria-label="Закрыть">
           </button>
           <button type="submit" aria-label="Отправить">Отправить
           </button>
+        </fieldset>
       </form>
 
-      <p class="contacts-phone" aria-label="Телефон магазина">
-        <img src="img/icon-phone.svg" alt="icon-phone">+7(812)555-05-55
+      <p class="contacts-phone">
+        +7(812)555-05-55
       </p>
-      <p class="header-contacts" aria-label="Адрес магазина">г.Санкт-Петербург......</p>
+      <p class="header-contacts">г.Санкт-Петербург......</p>
 
       <b>
         <a class="logo" href="index.html">Техномарт</a>
       </b>
-      <p class="top-menu"><img src="img/icon-search.svg" alt="icon-search">Поиск
+      <p class="top-menu">Поиск
       </p>
       <p class="top-menu">
-        <a href="bookmarks.html"><img src="img/icon-bookmark.svg" alt="icon-bookmark">Закладки:0
+        <a href="bookmarks.html">Закладки:0
         </a>
       </p>
       <p class="top-menu">
-        <a href="#"><img src="img/icon-cart.svg" alt="icon-cart">Корзина:0</a>
+        <a href="#">Корзина:0</a>
       </p>
       <p class="top-menu">
         <a href="#">Оформить заказ</a>
@@ -112,7 +111,7 @@
     <section class="contacts">
       <h3>Контакты</h3>
       <p class="text">Вы можеет забрать товар сами, заехав в наш офис:</p>
-        <img src="img/layer5.png" width="300" heigth="158" alt="Магазин на карте">
+      <img src="img/layer5.png" width="300" height="158" alt="Магазин на карте">
       <div class="more-information">
         <a href="#">заблудились? напишите нам</a>
       </div>
