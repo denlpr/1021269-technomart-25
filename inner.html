@@ -84,8 +84,11 @@
 
       <section class="filters">
         <h3 class="visually-hidden">Фильтр товаров</h3>
-        <b class="filters-argument">производители:</b>
+
+
         <form  action="http://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend class="visually-hidden">>производители:</legend>
           <ul>
             <li>
               <label>
@@ -113,19 +116,23 @@
             </label>
             </li>
           </ul>
-          <b class="filters-argument">питание:</b>
-          <ul>
-            <li>
-              <label>
-                <input type="radio" name="energy" value="аккумуляторные">аккумуляторные
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="radio" name="energy" value="сетевые">сетевые
-              </label>
-            </li>
-          </ul>
+        </fieldset>
+          <fieldset>
+          <legend class="visually-hidden">питание:</legend>
+            <ul>
+              <li>
+                <label>
+                  <input type="radio" name="energy" value="аккумуляторные">аккумуляторные
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="radio" name="energy" value="сетевые">сетевые
+                </label>
+              </li>
+            </ul>
+          
+          </fieldset>
           <button type="submit" name="energy" aria-label="Отправить">Показать
           </button>
         </form>
